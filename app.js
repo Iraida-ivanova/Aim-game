@@ -58,7 +58,7 @@ board.innerHTML = `<h1>Счет: <span class = 'primary'>${score}</span></h1>`
 function createRandomCircle() {
     const circle = document.createElement('div');
     circle.classList.add('circle');
-    const size = getRandomNumber(10, 60);
+    const size = getRandomNumber(20, 60);
     const {width, height} = board.getBoundingClientRect();
     const x = getRandomNumber(0, width - size);
     const y = getRandomNumber(0, height - size);
